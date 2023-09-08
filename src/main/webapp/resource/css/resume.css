@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.skill {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #6799FF;
+	margin: 5px;
+	border-radius: 5px;
+	text-align: center;
+	/* 가운데 정렬 추가 */
+}
+.resume_snb {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    /* 원하는 너비 조정 */
+    background-color: #fff;
+    /* 배경색상 설정 */
+    border-left: 1px solid #ccc;
+    /* 왼쪽에 경계선 추가 */
+    z-index: 1000;
+    /* 다른 콘텐츠 위에 나타나도록 설정 (조절 가능) */
+    overflow-y: auto;
+    /* 내용이 넘칠 경우 스크롤 가능하도록 설정 */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    /* 그림자 효과 추가 (선택사항) */
+}
+
+.snb_container {
+    padding: 20px;
+}
+
+/* 이력서 완성도 상자 스타일 */
+.snb_box {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.result{
+	background-color: aqua;
+	
+}

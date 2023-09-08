@@ -55,7 +55,11 @@
             		<c:when test="${empty sessionScope.member}">
 	            		<a href="${pageContext.request.contextPath}/member/login">로그인</a>
 		                <span>|</span>
-		                <a href="${pageContext.request.contextPath}/member/signup">회원가입</a>
+		                <a href="${pageContext.request.contextPath}/member/signup">회원가입</a><br>
+		               
+	            		<a href="${pageContext.request.contextPath}/member/companylogin">기업 로그인</a>
+		                <span>|</span>
+		                <a href="${pageContext.request.contextPath}/member/companysignup">기업 회원가입</a><br>
             		</c:when>
             		<%-- true --%>
             		<c:otherwise>

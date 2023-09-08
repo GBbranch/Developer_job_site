@@ -24,27 +24,29 @@ public class FrontController extends HttpServlet{
 	
 	@Override
 	public void init() throws ServletException {
-		super.init();
-		// 요청 방식 GET
-		getActionMap.put("/", new MainAction());
-		
-		getActionMap.put("/member/login", new ExcuteAction("../resource/page/login/login.jsp"));
-		getActionMap.put("/member/signup", new ExcuteAction("../resource/page/login/signup.jsp"));
-		getActionMap.put("/member/logout", new MemberLogoutAction());
-		
-		getActionMap.put("/member/resume", new ExcuteAction("../resource/page/member/resume.jsp"));
-		
-		getActionMap.put("/company/login", new ExcuteAction("../resource/page/login/login.jsp"));
-		getActionMap.put("/company/signup", new ExcuteAction("../resource/page/login/signup.jsp"));
-		
-		getActionMap.put("/article", new AriticleAction());
-		getActionMap.put("/article/list", new ExcuteAction("../resource/page/article/article-list.jsp"));
-		
-		// 요청 방식 POST
-		postActionMap.put("/member/login", new MemberLoginAction());
-		postActionMap.put("/member/signup", new MemberSingupAction());
-		postActionMap.put("/article", new ArticleInsertAction());
-		postActionMap.put("/member/resume", new ResumeWriteAction());
+	    super.init();
+	    // 요청 방식 GET
+	    getActionMap.put("/", new MainAction());
+
+	    getActionMap.put("/member/login", new ExcuteAction("../resource/page/login/login.jsp"));
+	    getActionMap.put("/member/signup", new ExcuteAction("../resource/page/login/signup.jsp"));
+	    getActionMap.put("/member/logout", new MemberLogoutAction());
+
+	    getActionMap.put("/member/resume", new ExcuteAction("../resource/page/member/resume.jsp"));
+
+	    getActionMap.put("/member/companylogin", new ExcuteAction("../resource/page/login/companylogin.jsp")); // 기업 로그인 페이지 추가
+	    getActionMap.put("/member/companysignup", new ExcuteAction("../resource/page/login/companysignup.jsp"));
+
+	    getActionMap.put("/company/signup", new ExcuteAction("../resource/page/login/signup.jsp"));
+
+	    getActionMap.put("/article", new AriticleAction());
+	    getActionMap.put("/article/list", new ExcuteAction("../resource/page/article/article-list.jsp"));
+
+	    // 요청 방식 POST
+	    postActionMap.put("/member/login", new MemberLoginAction());
+	    postActionMap.put("/member/signup", new MemberSingupAction());
+	    postActionMap.put("/article", new ArticleInsertAction());
+	    postActionMap.put("/member/resume", new ResumeWriteAction());
 	}
 	
 	@Override

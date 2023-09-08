@@ -1,74 +1,126 @@
 package com.dto;
 
 public class CompanyDTO {
-	private int id;
-	private String job;
-	private String career;
-	private String salary;
-	private String location;
-	private String need_amt;
-	private String deadline;
-	private String job_explain;
-	private String qualify;
-	private String tag_stack;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getJob() {
-		return job;
-	}
-	public void setJob(String job) {
-		this.job = job;
-	}
-	public String getCareer() {
-		return career;
-	}
-	public void setCareer(String career) {
-		this.career = career;
-	}
-	public String getSalary() {
-		return salary;
-	}
-	public void setSalary(String salary) {
-		this.salary = salary;
-	}
-	public String getLocation() {
-		return location;
-	}
-	public void setLocation(String location) {
-		this.location = location;
-	}
-	public String getNeed_amt() {
-		return need_amt;
-	}
-	public void setNeed_amt(String need_amt) {
-		this.need_amt = need_amt;
-	}
-	public String getDeadline() {
-		return deadline;
-	}
-	public void setDeadline(String deadline) {
-		this.deadline = deadline;
-	}
-	public String getJob_explain() {
-		return job_explain;
-	}
-	public void setJob_explain(String job_explain) {
-		this.job_explain = job_explain;
-	}
-	public String getQualify() {
-		return qualify;
-	}
-	public void setQualify(String qualify) {
-		this.qualify = qualify;
-	}
-	public String getTag_stack() {
-		return tag_stack;
-	}
-	public void setTag_stack(String tag_stack) {
-		this.tag_stack = tag_stack;
-	}
+    private String businessNumber;
+    private String password;
+    private String companyName;
+    private String establishedDate;
+    private String companyType;
+    private int employeeCount;
+    private String representativeName;
+    private String website;
+    private String zipcode;
+    private String address;
+    private String detailAddr;
+    private String addretc;
+    private String companyDescription;
+
+    // 생성자
+    public CompanyDTO() {
+    }
+
+    // Getter 및 Setter 메서드
+    public String getBusinessNumber() {
+        return businessNumber;
+    }
+
+    public void setBusinessNumber(String businessNumber) {
+        this.businessNumber = businessNumber;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getEstablishedDate() {
+        return establishedDate;
+    }
+
+    public void setEstablishedDate(String establishedDate) {
+        this.establishedDate = establishedDate;
+    }
+
+    public String getCompanyType() {
+        return companyType;
+    }
+
+    public void setCompanyType(String companyType) {
+        this.companyType = companyType;
+    }
+
+    public int getEmployeeCount() {
+        return employeeCount;
+    }
+
+    public void setEmployeeCount(int employeeCount) {
+        this.employeeCount = employeeCount;
+    }
+
+    public String getRepresentativeName() {
+        return representativeName;
+    }
+
+    public void setRepresentativeName(String representativeName) {
+        this.representativeName = representativeName;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getDetailAddr() {
+        return detailAddr;
+    }
+
+    public void setDetailAddr(String detailAddr) {
+        this.detailAddr = detailAddr;
+    }
+
+    public String getAddretc() {
+        return addretc;
+    }
+
+    public void setAddretc(String addretc) {
+        this.addretc = addretc;
+    }
+
+    public String getCompanyDescription() {
+        return companyDescription;
+    }
+
+    public void setCompanyDescription(String companyDescription) {
+        this.companyDescription = companyDescription;
+    }
 }

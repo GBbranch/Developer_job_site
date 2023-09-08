@@ -50,3 +50,51 @@ header .search button[type="submit"]{
 header .search .icon {
     height : 1.35em;
 }
+
+.member a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px; 
+    font-weight: bold;
+}
+
+.member a.company {
+    color: #007bff; 
+}
+
+header .search {
+    padding: 1rem 0.5rem;
+    border: 2px solid #3157dd;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center; 
+}
+
+header .search input[type="text"] {
+    display: inline-block;
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    height: 1.2rem;
+    padding-left: 1.2rem;
+    color: #292e41;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+header .search input[type="text"]:focus {
+    outline: none;
+}
+
+header .search button[type="submit"] {
+    display: inline-block;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    padding-right: 1.2rem;
+}
+
+header .search .icon {
+    height: 1.35em;
+}

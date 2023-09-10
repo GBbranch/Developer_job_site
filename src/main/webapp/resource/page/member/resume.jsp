@@ -80,10 +80,10 @@ input[type="checkbox"]:checked ~ ul {
 		<fieldset>
 			<div class="box">
 				<div id="career" class="content-section">
-					<h2 class="career"></h2>
+					<h2 class="career">직군</h2>
 					<input type="checkbox" id="careerRoot">
 					 <label for="careerRoot">정보열기</label>
-					<ul id="List">
+					<ul id="careerList">
 						<!-- 이 부분에 추가된 리스트 아이템이 표시됩니다. -->
 					</ul>
 					<input type="text" id="CAREER" name="CAREER" required><br>
@@ -100,7 +100,7 @@ input[type="checkbox"]:checked ~ ul {
 					<h2 class="school">학력</h2>
 					<input type="checkbox" id="schoolRoot"> <label
 						for="schoolRoot">정보열기</label>
-					<ul id="List">
+					<ul id="school_endList">
 						<!-- 이 부분에 추가된 리스트 아이템이 표시됩니다. -->
 					</ul>
 					<input type="text" id="SCHOOL" name="SCHOOL" required><br>
@@ -114,11 +114,11 @@ input[type="checkbox"]:checked ~ ul {
 		<!-- 포트폴리오 부분 -->
 		<fieldset>
 			<div class="box">
-				<div id="career_now" class="content-section">
-					<h2 class="career">포트폴리오</h2>
-					<input type="checkbox" id="careerNowRoot"> <label
-						for="careerNowRoot">정보열기</label>
-					<ul id="careerNowList">
+				<div id="portfolio" class="content-section">
+					<h2 class="portfolio">포트폴리오</h2>
+					<input type="checkbox" id="portfolioRoot"> <label
+						for="portfolioRoot">정보열기</label>
+					<ul id="portfolioList">
 						<!-- 이 부분에 추가된 리스트 아이템이 표시됩니다. -->
 					</ul>
 					<input type="text" id="PORTFOLIO" name="PORTFOLIO" required><br>

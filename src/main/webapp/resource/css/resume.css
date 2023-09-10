@@ -1,38 +1,31 @@
 @charset "UTF-8";
 
 .skill {
-	display: inline-block;
-	padding: 5px 10px;
-	border: 1px solid #6799FF;
-	margin: 5px;
-	border-radius: 5px;
-	text-align: center;
-	/* 가운데 정렬 추가 */
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #6799FF;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
+
 .resume_snb {
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
     width: 300px;
-    /* 원하는 너비 조정 */
     background-color: #fff;
-    /* 배경색상 설정 */
     border-left: 1px solid #ccc;
-    /* 왼쪽에 경계선 추가 */
     z-index: 1000;
-    /* 다른 콘텐츠 위에 나타나도록 설정 (조절 가능) */
     overflow-y: auto;
-    /* 내용이 넘칠 경우 스크롤 가능하도록 설정 */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    /* 그림자 효과 추가 (선택사항) */
 }
 
 .snb_container {
     padding: 20px;
 }
 
-/* 이력서 완성도 상자 스타일 */
 .snb_box {
     background-color: #f5f5f5;
     border: 1px solid #ccc;
@@ -40,7 +33,79 @@
     border-radius: 5px;
 }
 
-.result{
-	background-color: aqua;
-	
+.result {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* 클릭 가능한 요소를 가리키는 커서 스타일 */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button.editButton {
+    background-color: #007bff;
+}
+
+button.deleteButton {
+    background-color: #dc3545;
+}
+
+#resume_title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resume_btm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #007bff;
+    margin-top: 20px;
+}
+
+.result:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변경 */
 }

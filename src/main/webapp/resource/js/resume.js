@@ -1,4 +1,5 @@
 console.log("resume.js");
+
 // 링크 클릭 시 스크롤 처리
 document.querySelectorAll('a.BtnType.con_link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -14,7 +15,6 @@ document.querySelectorAll('a.BtnType.con_link').forEach(anchor => {
     });
 });
 
-// 추가하기 버튼
 // Career 부분의 버튼과 리스트를 다루는 코드
 const careerEditButton = document.querySelector("#career .editButton");
 const careerDeleteButton = document.querySelector("#career .deleteButton");
@@ -42,36 +42,10 @@ careerDeleteButton.addEventListener("click", () => {
     });
 });
 
-// License 부분의 버튼과 리스트를 다루는 코드
-const licenseEditButton = document.querySelector("#license .editButton");
-const licenseDeleteButton = document.querySelector("#license .deleteButton");
-const licenseList = document.querySelector("#licenseList");
-
-licenseEditButton.addEventListener("click", () => {
-    const licenseInputElement = document.getElementById("LICENCE");
-    const licenseListItem = document.createElement("li");
-    licenseListItem.innerHTML = `
-        <input type="checkbox">
-        ${licenseInputElement.value}
-    `;
-    licenseList.appendChild(licenseListItem);
-    licenseInputElement.value = ""; // 입력 필드 초기화
-});
-
-licenseDeleteButton.addEventListener("click", () => {
-    const licenseCheckboxes = licenseList.querySelectorAll("input[type='checkbox']");
-
-    licenseCheckboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-            const licenseListItem = checkbox.parentElement;
-            licenseListItem.remove();
-        }
-    });
-});
 // 학력 추가/삭제 버튼과 리스트를 다루는 코드
 const schoolEditButton = document.querySelector("#school_end .editButton");
 const schoolDeleteButton = document.querySelector("#school_end .deleteButton");
-const schoolList = document.querySelector("#List");
+const schoolList = document.querySelector("#school_endList");
 
 schoolEditButton.addEventListener("click", () => {
     const schoolInputElement = document.getElementById("SCHOOL");
@@ -95,8 +69,34 @@ schoolDeleteButton.addEventListener("click", () => {
     });
 });
 
+// 포트폴리오 추가/삭제 버튼과 리스트를 다루는 코드
+const portfolioEditButton = document.querySelector("#portfolio .editButton");
+const portfolioDeleteButton = document.querySelector("#portfolio .deleteButton");
+const portfolioList = document.querySelector("#portfolioList");
 
-// 경력 사항 부분의 버튼과 리스트를 다루는 코드
+portfolioEditButton.addEventListener("click", () => {
+    const portfolioInputElement = document.getElementById("PORTFOLIO");
+    const portfolioListItem = document.createElement("li");
+    portfolioListItem.innerHTML = `
+        <input type="checkbox">
+        ${portfolioInputElement.value}
+    `;
+    portfolioList.appendChild(portfolioListItem);
+    portfolioInputElement.value = ""; // 입력 필드 초기화
+});
+
+portfolioDeleteButton.addEventListener("click", () => {
+    const portfolioCheckboxes = portfolioList.querySelectorAll("input[type='checkbox']");
+
+    portfolioCheckboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            const portfolioListItem = checkbox.parentElement;
+            portfolioListItem.remove();
+        }
+    });
+});
+
+// 경력 사항 추가/삭제 버튼과 리스트를 다루는 코드
 const regDateEditButton = document.querySelector("#reg_date .editButton");
 const regDateDeleteButton = document.querySelector("#reg_date .deleteButton");
 const regDateList = document.querySelector("#reg_dateList");
@@ -122,33 +122,30 @@ regDateDeleteButton.addEventListener("click", () => {
         }
     });
 });
-// 직군 추가/삭제 버튼과 리스트를 다루는 코드
-const careerNowEditButton = document.querySelector("#career_now .editButton");
-const careerNowDeleteButton = document.querySelector("#career_now .deleteButton");
-const careerNowList = document.querySelector("#careerNowList");
 
-careerNowEditButton.addEventListener("click", () => {
-    const portfolioInputElement = document.getElementById("PORTFOLIO");
-    const careerNowListItem = document.createElement("li");
-    careerNowListItem.innerHTML = `
+// 보유 자격증 추가/삭제 버튼과 리스트를 다루는 코드
+const licenseEditButton = document.querySelector("#license .editButton");
+const licenseDeleteButton = document.querySelector("#license .deleteButton");
+const licenseList = document.querySelector("#licenseList");
+
+licenseEditButton.addEventListener("click", () => {
+    const licenseInputElement = document.getElementById("LICENCE");
+    const licenseListItem = document.createElement("li");
+    licenseListItem.innerHTML = `
         <input type="checkbox">
-        ${portfolioInputElement.value}
+        ${licenseInputElement.value}
     `;
-    careerNowList.appendChild(careerNowListItem);
-    portfolioInputElement.value = ""; // 입력 필드 초기화
+    licenseList.appendChild(licenseListItem);
+    licenseInputElement.value = ""; // 입력 필드 초기화
 });
 
-careerNowDeleteButton.addEventListener("click", () => {
-    const careerNowCheckboxes = careerNowList.querySelectorAll("input[type='checkbox']");
+licenseDeleteButton.addEventListener("click", () => {
+    const licenseCheckboxes = licenseList.querySelectorAll("input[type='checkbox']");
 
-    careerNowCheckboxes.forEach(checkbox => {
+    licenseCheckboxes.forEach(checkbox => {
         if (checkbox.checked) {
-            const careerNowListItem = checkbox.parentElement;
-            careerNowListItem.remove();
+            const licenseListItem = checkbox.parentElement;
+            licenseListItem.remove();
         }
     });
 });
-
-
-
-

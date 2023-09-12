@@ -12,3 +12,6 @@
 ## 추후 계획
 
 - 학력 조회 API 연동 [🌐](https://www.career.go.kr/cnet/front/openapi/openApiJobCenter.do)
+
+- ## 9월 13 중간 점검
+- 각 페이지 DB 연동 

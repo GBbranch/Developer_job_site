@@ -149,3 +149,26 @@ licenseDeleteButton.addEventListener("click", () => {
         }
     });
 });
+
+
+// 폼 제출 버튼 선택
+const submitButton = document.querySelector(".result");
+
+// 폼 제출 이벤트 핸들러 등록
+submitButton.addEventListener("click", function (e) {
+    // 각 필드의 값을 가져와서 검증
+    const careerValue = document.getElementById("CAREER").value.trim();
+    const schoolValue = document.getElementById("SCHOOL").value.trim();
+    const portfolioValue = document.getElementById("PORTFOLIO").value.trim();
+    const regDateValue = document.getElementById("REG_DATE").value.trim();
+    const licenceValue = document.getElementById("LICENCE").value.trim();
+
+    if (!careerValue || !schoolValue || !portfolioValue || !regDateValue || !licenceValue) {
+        // 하나 이상의 필드가 비어 있을 경우 제출을 중단하고 에러 메시지 표시
+        alert("모든 항목을 입력해주세요.");
+        e.preventDefault(); // 제출 중단
+    }
+});
+
+
+

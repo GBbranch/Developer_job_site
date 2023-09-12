@@ -16,12 +16,6 @@ CREATE TABLE c_scale (
     title VARCHAR2(20)
 );
 
--- 직무 테이블 생성 (기본 키)
-CREATE TABLE job (
-    id NUMBER(6) PRIMARY KEY,
-    type VARCHAR2(20)
-);
-
 -- 회사 테이블 생성
 CREATE TABLE COMPANY (
     id NUMBER(6),
@@ -45,7 +39,6 @@ CREATE TABLE COMPANY (
 CREATE TABLE article (
     id NUMBER(6),
     company_id NUMBER(6),
-    job_id NUMBER(6), -- job 테이블의 id에 대한 외래 키
     title VARCHAR2(20), -- 새로운 열: title
     career VARCHAR2(5),
     salary NUMBER(10),
@@ -54,12 +47,12 @@ CREATE TABLE article (
     need_amt NUMBER(4),
     job_explain VARCHAR2(200),
     deadline DATE, -- 새로운 열: deadline
-    qualify	varchar2(60),
+    qualify VARCHAR2(60),
     PRIMARY KEY (id),
     FOREIGN KEY (address_id) REFERENCES address (id),
-    FOREIGN KEY (job_id) REFERENCES job (id),
     FOREIGN KEY (company_id) REFERENCES COMPANY (id)
 );
+
 
 -- 보내기 테이블 생성
 CREATE TABLE send (
@@ -79,6 +72,15 @@ CREATE TABLE skill_stack (
     PRIMARY KEY (id),
     FOREIGN KEY (article_id) REFERENCES article (id)
 );
+
+-- 직무 테이블 생성 (기본 키)
+CREATE TABLE job (
+    id NUMBER(6) PRIMARY KEY,
+    type VARCHAR2(20),
+    article_id NUMBER(6), -- article_id 컬럼 추가
+    FOREIGN KEY(article_id) REFERENCES article (id)
+);
+
 
 -- 회원 테이블 생성
 CREATE TABLE MEMBER (

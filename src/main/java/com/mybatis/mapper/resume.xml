@@ -17,6 +17,9 @@
 		INSERT INTO licence (id, resume_id, title)
 		VALUES (licence_seq.NEXTVAL, #{resume_id}, #{title})
 	</insert>
+	<insert id="reg" parameterType="com.dto.RegDTO">
 	
+			
+	</insert>
 
 </mapper>

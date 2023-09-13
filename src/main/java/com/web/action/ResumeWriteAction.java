@@ -23,10 +23,7 @@ public class ResumeWriteAction extends ExcuteAction {
 		
 		rdto.setUser_id(Integer.toString(member.getId()));
 		rdto.setCareer(req.getParameter("CAREER"));
-		rdto.setSchool(req.getParameter("SCHOOL"));
 		rdto.setPortfolio(req.getParameter("PORTFOLIO"));
-		rdto.setReg_date(req.getParameter("REG_DATE"));
-		rdto.setLicence(req.getParameter("LICENCE"));
 		
 		System.out.println(rdto.toString());
 		

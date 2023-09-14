@@ -1,6 +1,5 @@
 package com.dto;
 
-<<<<<<< HEAD
 import java.sql.Date;
 
 public class RegDTO {

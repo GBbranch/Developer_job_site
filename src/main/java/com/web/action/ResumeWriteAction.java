@@ -25,7 +25,6 @@ public class ResumeWriteAction extends ExcuteAction {
 		MemberDTO member = (MemberDTO) session.getAttribute("member");
 		ResumeDTO resume = new ResumeDTO();
 		
-<<<<<<< HEAD
 		rdto.setUser_id(Integer.toString(member.getId()));
 		rdto.setCareer(req.getParameter("CAREER"));
 		rdto.setPortfolio(req.getParameter("PORTFOLIO"));
@@ -39,13 +38,11 @@ public class ResumeWriteAction extends ExcuteAction {
 		
 		
 		
-=======
 		// 회원이 존재하지 않을 경우..
 		if(member == null) {
 			System.out.println("로그인이 되지 않아, 이력서 작성 권한이 없습니다.");
 			return super.excute(req, resp);
 		}
->>>>>>> origin/jbh
 		
 		// 경력
 		List<RegDTO> regList = new ArrayList<RegDTO>();

@@ -1,6 +1,6 @@
 package com.dto;
 
-public class LicenceDTO {
+public class LiecenceDTO {
 	private int id;
 	private int resume_id;
 	private String title;
@@ -24,7 +24,7 @@ public class LicenceDTO {
 	}
 	@Override
 	public String toString() {
-		return "LicenceDTO [id=" + id + ", resume_id=" + resume_id + ", title=" + title + "]";
+		return "LiecenceDTO [id=" + id + ", resume_id=" + resume_id + ", title=" + title + "]";
 	}
 	
 }

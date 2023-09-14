@@ -170,5 +170,53 @@ submitButton.addEventListener("click", function (e) {
     }
 });
 
+// resume.js
+
+function validateCareer() {
+    var careerTag = document.getElementById("CAREER");
+
+    if (careerTag.value === "") {
+        alert("직군을 입력하세요");
+        careerTag.focus();
+    }
+}
+
+function validateSchool() {
+    var schoolTag = document.getElementById("SCHOOL");
+
+    if (schoolTag.value === "") {
+        alert("학력을 입력하세요");
+        schoolTag.focus();
+    }
+}
+
+function validatePortfolio() {
+    var portfolioTag = document.getElementById("PORTFOLIO");
+
+    if (portfolioTag.value === "") {
+        alert("포트폴리오를 입력하세요");
+        portfolioTag.focus();
+    }
+}
+
+function validateRegDate() {
+    var regDateTag = document.getElementById("REG_DATE");
+
+    if (regDateTag.value === "") {
+        alert("경력 사항을 입력하세요");
+        regDateTag.focus();
+    }
+}
+
+function validateLicence() {
+    var licenceTag = document.getElementById("LICENCE");
+
+    if (licenceTag.value === "") {
+        alert("자격증 정보를 입력하세요");
+        licenceTag.focus();
+    }
+}
+
+
 
 

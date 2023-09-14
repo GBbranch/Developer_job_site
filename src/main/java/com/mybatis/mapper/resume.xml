@@ -4,22 +4,55 @@
  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Resume">
 	<insert id="write" parameterType="com.dto.ResumeDTO">
-		INSERT INTO RESUME VALUES
-		(resume_seq.NEXTVAL, #{user_id} , #{career} , #{portfolio}
+		INSERT INTO RESUME (
+		id,
+		member_id,
+		career,
+		portfolio
+		) VALUES
+		<foreach collection="list" item="item" separator=",">
+			(
+			resume_seq.NEXTVAL,
+			#{item.user_id},
+			#{item.career},
+			#{item.portfolio}
+			)
+		</foreach>
 	</insert>
 	<insert id="insertSchool" parameterType="com.dto.SchoolDTO">
-		INSERT INTO school (id,member_id, Rating, name, department, status, grade)
-		VALUES
-		(school_seq.NEXTVAL, #{member_id}, #{Rating}, #{name},
-		#{department},#{status}, #{grade})
+		INSERT INTO school (
+		id ,
+		MEMBER_ID ,
+		Rating,
+		name ,
+		department,
+		status ,
+		grade )VALUES
+		<foreach collection="list" item="item" separator=",">
+		 ( school_seq.NEXTVAL,
+		  #{member_id}, 
+		  #{Rating},
+		   #{name},
+		#{department},
+		#{status},
+		 #{grade})
+		</foreach>
 	</insert>
-	<insert id="insertLicence" parameterType="com.dto.LicenceDTO">
-		INSERT INTO licence (id, resume_id, title)
-		VALUES (licence_seq.NEXTVAL, #{resume_id}, #{title})
+	<insert id="insertLiecence" parameterType="com.dto.LiecenceDTO">
+		INSERT INTO liecence(
+			id,
+		  	resume_id,
+			title) VALUES 
+		<foreach collection="list" item="item" separator=",">
+		(
+		licence_seq.NEXTVAL,
+		#{resume_id},
+		#{title})
+		</foreach>
 	</insert>
 	<insert id="reg" parameterType="com.dto.RegDTO">
-	
-			
-	</insert>
 
+		<!-- 끝부분 -->
+		end
+	</insert>
 </mapper>

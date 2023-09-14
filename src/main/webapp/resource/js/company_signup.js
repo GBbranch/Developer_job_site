@@ -1,5 +1,5 @@
-console.log("🖐️singup.js");
-async function member_sigup(e) {
+console.log("🖐️company_signup.js");
+async function company_sigup(e) {
 	e.preventDefault();
 	
 	// form 데이터 구성
@@ -10,15 +10,17 @@ async function member_sigup(e) {
 	const addr2 = address.substring(addr1.length);
 	
 	const loginData = {
-			userid : form.userid.value,
+			company_no : form.company_no.value,
 			password : form.password.value,
 			name : form.name.value,
-			gender : form.gender.value,
-			birthday : form.birthday.value,
-			phone : form.phone.value,
-			email : form.email.value,
+			esta : form.esta.value,
+			scale : form.scale.value,
+			employee_no : form.employee_no.value,
+			ceo : form.ceo.value,
+			url : form.url.value,
 			address : addr1,
 			detail_addr : (addr2 + form.addretc.value).trim(),
+			content : form.content.value,
 		};
 	console.log(form.action);
 	console.table(loginData);

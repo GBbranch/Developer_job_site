@@ -16,18 +16,12 @@
 
 		<fieldset id="careerField">
 			<legend>직무</legend>
-			<button id="carrerPlus">추가</button>
-			<ul id="careerList">
-				<input type="text" name="career" value="직무" />
-			</ul>
+			<input type="text" name="career" value="직무" />
 		</fieldset>
 
 		<fieldset id="portfolioField">
 			<legend>포트폴리오 주소</legend>
-			<button id="portfolioPlus">추가</button>
-			<div id="portfolioList">
-				<input type="text" name="portfolio" value="url" />
-			</div>
+			<input type="text" name="portfolio" value="url" />
 		</fieldset>
 
 		<fieldset id="regField">
@@ -40,15 +34,9 @@
 
 		<fieldset id="schoolField">
 			<legend>학교</legend>
-			<div class="schoolItem">
-				<button id="schoolPlus">추가</button>
-				<ul id="schoolList">
-					<input type="text" name="schRating" value="대학교" />
-					<input type="text" name="schName" value="어느 대학교" />
-					<input type="text" name="schDepartment" value="컴공" />
-					<input type="text" name="schStatus" value="졸업" />
-					<input type="number" name="schGrade" value="35" />
-			</div>
+			<button id="schoolPlus">추가</button>
+			<ul id="schoolList">
+
 			</ul>
 		</fieldset>
 

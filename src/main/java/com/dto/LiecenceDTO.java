@@ -3,6 +3,7 @@ package com.dto;
 public class LiecenceDTO {
 	private int id;
 	private int resume_id;
+	private String resume_id;
 	private String title;
 	public int getId() {
 		return id;
@@ -14,6 +15,10 @@ public class LiecenceDTO {
 		return resume_id;
 	}
 	public void setResume_id(int resume_id) {
+	public String getResume_id() {
+		return resume_id;
+	}
+	public void setResume_id(String resume_id) {
 		this.resume_id = resume_id;
 	}
 	public String getTitle() {

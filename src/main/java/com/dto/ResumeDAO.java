@@ -3,7 +3,6 @@ package com.dto;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
-import com.dto.ResumeDTO;
 import com.mybatis.SqlMapConfig;
 
 public class ResumeDAO {
@@ -14,6 +13,7 @@ public class ResumeDAO {
         sqlSession = factory.openSession(true);
     }
 
+<<<<<<< HEAD
     public boolean insertresume(ResumeDTO rdto) {
         boolean result = false;
         
@@ -31,6 +31,23 @@ public class ResumeDAO {
         
         return result;
     }
+=======
+	public boolean insertresume(ResumeDTO rdto) {
+		boolean result = false;
+
+		return result;
+	}
+
+	public boolean save(ResumeDTO rdto) {
+		try {
+			sqlSession.insert("Resume.write", rdto);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+>>>>>>> origin/jbh
 
     public boolean save(ResumeDTO rdto) {
         if (sqlSession.insert("Resume.write", rdto) == 1) {

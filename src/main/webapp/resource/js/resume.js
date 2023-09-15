@@ -53,28 +53,29 @@ schoolEditButton.addEventListener("click", () => {
 
 	const rating = document.createElement("input");
 	rating.setAttribute('name', 'rating');
-
+	
 	const schoolName = document.createElement("input");
 	schoolName.setAttribute('name', 'schoolName');
-
+	
 	const department = document.createElement("input");
 	department.setAttribute('name', 'department');
-
+	
 	const status = document.createElement("input");
 	status.setAttribute('name', 'status');
-
+	
 	const grade = document.createElement("input");
 	grade.setAttribute('name', 'grade');
-
+	
 	schoolListItem.innerHTML = `
         <input type="checkbox">
         ${schoolInputElement.value}
     `;
-	schoolListItem.appendChild(schoolRatingInput);
-	schoolListItem.appendChild(schoolNameInput);
-	schoolListItem.appendChild(departmentInput);
-	schoolListItem.appendChild(statusInput);
-	schoolListItem.appendChild(gradeInput);
+	schoolList.appendChild(schoolListItem);
+	schoolListItem.appendChild(rating);
+	schoolListItem.appendChild(schoolName);
+	schoolListItem.appendChild(department);
+	schoolListItem.appendChild(status);
+	schoolListItem.appendChild(grade);
 	schoolInputElement.value = ""; // 입력 필드 초기화
 });
 
@@ -124,24 +125,24 @@ const regDateList = document.querySelector("#reg_dateList");
 regDateEditButton.addEventListener("click", () => {
 	const regDateInputElement = document.getElementById("REG_DATE");
 	const regDateListItem = document.createElement("li");
-
+	
 	const regname = document.createElement("input");
 	regname.setAttribute('name', 'regName');
-
-	const regJob = document.createElement("input");
+	
+	const regJob  = document.createElement("input");
 	regJob.setAttribute('name', 'regJob');
-
-	const regSword_day = document.createElement("input");
+	
+	const regSword_day  = document.createElement("input");
 	regSword_day.setAttribute('name', 'regSword_day');
-
-	const regEword_day = document.createElement("input");
-	regEword_day.setAttribute('name', 'regEword_day');
+	
+	const regEword_day  = document.createElement("input");
+	regEword_day .setAttribute('name', 'regEword_day');
 
 	regDateListItem.innerHTML = `
         <input type="checkbox">
         ${regDateInputElement.value}
     `;
-	regDateList.appendChild(regDateListItem);
+    regDateList.appendChild(regDateListItem);
 	regDateListItem.append(regName);
 	regDateListItem.append(regJob);
 	regDateListItem.append(regSword_day);
@@ -168,7 +169,7 @@ const licenseList = document.querySelector("#licenseList");
 licenseEditButton.addEventListener("click", () => {
 	const licenseInputElement = document.getElementById("LICENCE");
 	const licenseListItem = document.createElement("li");
-
+	
 	const titleInput = document.createElement("input");
 	titleInput.setAttribute('name', 'licenseTitle');
 	licenseListItem.innerHTML = `

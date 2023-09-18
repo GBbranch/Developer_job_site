@@ -1,112 +1,7 @@
-<<<<<<< Updated upstream
 @charset "UTF-8";
 
 .skill {
-    display: inline-block;
-    padding: 5px 10px;
-    border: 1px solid #6799FF;
-    margin: 5px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.resume_snb {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 300px;
-    background-color: #fff;
-    border-left: 1px solid #ccc;
-    z-index: 1000;
-    overflow-y: auto;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.snb_container {
-    padding: 20px;
-}
-
-.snb_box {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.result {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer; /* 클릭 가능한 요소를 가리키는 커서 스타일 */
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-label {
-    font-weight: bold;
-    color: #007bff;
-    cursor: pointer;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-button.editButton {
-    background-color: #007bff;
-}
-
-button.deleteButton {
-    background-color: #dc3545;
-}
-
-#resume_title {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.resume_btm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    background-color: #007bff;
-    margin-top: 20px;
-}
-
+@@ -109,3 +110,187 @@ button.deleteButton {
 .result:hover {
     background-color: #0056b3; /* 호버 시 배경색 변경 */
 }
@@ -255,7 +150,7 @@ input[type="date"] {
 
 /* 버튼 스타일링 */
 button {
-	
+
   background-color: #007bff;
   color: #fff;
   padding: 5px 10px;
@@ -292,5 +187,3 @@ button {
 #submit:hover {
   background-color: #0056b3; /* 마우스 오버시 배경색상 변경 */
 }
-
->>>>>>> Stashed changes

@@ -39,5 +39,5 @@
 			</c:otherwise>
 		</c:choose>
 	</div>
-	
+	<div id="box"></div>
 </div>

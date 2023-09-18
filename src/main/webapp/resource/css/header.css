@@ -4,7 +4,7 @@ header {
     margin: 0 auto;
     padding-top: 2rem;
     background-color: white;
-    border-bottom: 1.5px solid #eff5ff;
+    border-bottom: 10px solid #20C0B7;
 }
 
 header .header{
@@ -49,4 +49,11 @@ header .search button[type="submit"]{
 
 header .search .icon {
     height : 1.35em;
+}
+.member{
+	position: relative;
+	left: 700px;
+}
+#box{
+	height: 10px;
 }

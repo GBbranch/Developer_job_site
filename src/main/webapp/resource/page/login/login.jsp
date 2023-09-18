@@ -30,7 +30,7 @@
 	  		<span id="companySelect">기업회원</span>
 	  	</div>
 	    <h1>로그인</h1>
-	    <form action="${pageContext.request.contextPath}/member/login" method="post" name="loginForn">
+	    <form action="${pageContext.request.contextPath}" method="post" name="loginForn">
 	      <input type="text" name="userid" id="userid" placeholder="사용자 이름" required>
 	      <input type="password" name="password" id="password" placeholder="비밀번호" required>
 	      <button type="submit">로그인</button>

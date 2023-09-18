@@ -51,10 +51,10 @@
 			<legend>학교</legend>
 			<c:forEach var="i" items="${school}">
 				<div>
-				학교등급 : <span>${i.RATING }</span><br/>
-				학교명 : <span>${i.NAME }</span><br/>
-				학과 : <span>${i.DEPARTMENT }</span><br/>
-				졸업여부 : <span>${i.STATUS }</span><br/>
+				<h3>학교등급 : <span>${i.RATING }</span><br/></h3>
+				<h3>학교명 : <span>${i.NAME }</span><br/></h3>
+				<h3>학과 : <span>${i.DEPARTMENT }</span><br/></h3>
+				<h3>졸업여부 : <span>${i.STATUS }</span><br/></h3>
 				</div>
 			</c:forEach>
 		</fieldset>
@@ -64,9 +64,9 @@
 		<fieldset>
 			<legend>경력</legend>
 			<c:forEach var="i" items="${reg}">
-				<p>${i.NAME }</p>
-				<p>${i.JOB }</p>
-				<p>${i.SWORK_DAY } ~ ${i.EWORK_DAY }</p>
+				<h3><p>${i.NAME }</p></h3>
+				<h3><p>${i.JOB }</p></h3>
+				<h3><p>${i.SWORK_DAY } ~ ${i.EWORK_DAY }</p></h3>
 			</c:forEach>
 		</fieldset>
 	</c:if>
@@ -75,8 +75,8 @@
 		<fieldset>
 			<legend>자격증</legend>
 			<c:forEach var="i" items="${liecence}">
-				자격증명 : <p>${i.TITLE }</p>
-				취득날짜 : <p>${i.ACQUISITION }</p>
+				<h3>자격증명 : <p>${i.TITLE }</p></h3>
+				<h3>취득날짜 : <p>${i.ACQUISITION }</p></h3>
 			</c:forEach>
 		</fieldset>
 	</c:if>
@@ -85,7 +85,7 @@
 		<fieldset>
 			<legend>자기소개</legend>
 			<div>
-				${resume.SELF_INTRO}
+				<h3>${resume.SELF_INTRO}</h3>
 			</div>
 		</fieldset>
 	</c:if>

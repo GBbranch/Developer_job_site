@@ -29,6 +29,8 @@ public class ResumeWriteAction extends ExcuteAction {
 		rdto.setCareer(req.getParameter("CAREER"));
 		rdto.setPortfolio(req.getParameter("PORTFOLIO"));
 		
+		//dto 추가
+		
 	
 		
 		

@@ -13,6 +13,7 @@
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
 	<script src="${pageContext.request.contextPath}/resource/js/kakaomap.js" defer></script>
 	<script src="${pageContext.request.contextPath}/resource/js/article-write.js" defer></script>
+	<script src="${pageContext.request.contextPath}/resource/js/validation_article.js" defer></script>
 	
 	
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resource/css/article-write.css">
@@ -20,7 +21,8 @@
 </head>
 <body>
 	<c:set var="article" value="${requestScope.article }"></c:set>
-	<c:set var="company" value="${requestScope.company }"></c:set>
+	<c:set var="company" value="${sessionScope.member }"></c:set>
+	<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 	
 	<header><%@ include file= "/WEB-INF/views/header.jsp" %></header>
 	
@@ -37,7 +39,7 @@
                         기업명
                     </th>
                     <td id="name" name="name" align="left" colspan="8">
-                        &emsp;${company.NAME }
+                        <span id="name" name="name">${company.name }</span>
                     </td>
                 </tr>
                 <!-- <tr>

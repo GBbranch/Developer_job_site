@@ -34,7 +34,7 @@
     <form action="" id="body" name="body">
         <div id="jobname">
             <div id="br"><!-- br대용 --></div>
-            <span id="name" name="name">${company.name }</span>
+            <span id="name" name="name">${company.NAME }</span>
         </div>
         <div id="br"><!-- br대용 --></div>
         <div id="jobtitle">
